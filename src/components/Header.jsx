@@ -20,7 +20,7 @@ function Header() {
         {/* We will make these links work later with React Router */}
         <div className="hidden md:flex space-x-6">
           <Link to="/about" className="hover:text-gray-300">About Us</Link>
-          <Link to="#services" className="hover:text-gray-300">Services</Link>
+          <Link to="/services" className="hover:text-gray-300">Services</Link>
           <Link to="/" href="#" className="hover:text-gray-300">Industries</Link>
           <Link to="/" className="hover:text-gray-300">Insights</Link>
           <Link to="/" className="hover:text-gray-300">Contact Us</Link>
