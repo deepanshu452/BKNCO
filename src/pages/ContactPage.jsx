@@ -1,5 +1,5 @@
 import React from 'react';
-import { servicesData } from '../data/services'; // Reusing your service data
+import { servicesData } from '../data/services';
 
 function ContactPage() {
   return (
@@ -20,9 +20,6 @@ function ContactPage() {
                 Get in Touch
               </h1>
               
-              {/* === THIS IS THE UPDATED FORM TAG === */}
-              {/* 1. Replace "YOUR_UNIQUE_ID" with your own from formspree.io */}
-              {/* 2. The method is set to "POST" */}
               <form 
                 action="https://formspree.io/f/xwpwdrvd" 
                 method="POST" 
