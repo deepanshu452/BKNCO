@@ -32,7 +32,7 @@ function TopBar() {
           <a href="#" className="hover:text-brand-blue" aria-label="Twitter">
             <TwitterIcon />
           </a>
-          <a href="#" className="bg-brand-blue text-white px-3 py-1 rounded-full text-xs font-semibold hover:bg-opacity-90 transition-colors">
+          <a href="/contactus" className="bg-brand-blue text-white px-3 py-1 rounded-full text-xs font-semibold hover:bg-opacity-90 transition-colors">
             Get in Touch
           </a>
         </div>

@@ -45,7 +45,7 @@ function Header() {
           
           <Link to="/" className="hover:text-gray-300">Industries</Link>
           <Link to="/" className="hover:text-gray-300">Insights</Link>
-          <Link to="/" className="hover:text-gray-300">Contact Us</Link>
+          <Link to="/contactus" className="hover:text-gray-300">Contact Us</Link>
         </div>
 
         {/* Mobile Menu Button (for later) */}
