@@ -1,6 +1,7 @@
 import React from 'react';
 
 // A component for the "Stats" section from the image
+// NOT IN USE CURRENTLY (If needed for future)
 const StatItem = ({ number, label }) => (
   <div className="text-center">
     <span className="block text-5xl font-bold text-brand-blue">{number}</span>
@@ -24,7 +25,6 @@ function AboutPage() {
     <div className="bg-white">
       
       {/* === Section 1: "About our Company" === */}
-      {/* Based on images a17562.jpg and a17579.png */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="flex items-center text-brand-blue font-semibold mb-3">
@@ -45,7 +45,6 @@ function AboutPage() {
 
 
       {/* === Section 3: "Our Approach" === */}
-      {/* Based on image a17828.jpg */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -75,7 +74,6 @@ function AboutPage() {
       </section>
 
       {/* === Section 4: "Our Culture" === */}
-      {/* Based on image a17861.png */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-12">
@@ -106,7 +104,6 @@ function AboutPage() {
       </section>
 
       {/* === Section 5: "BKN Foundation" (CSR) === */}
-      {/* Based on image a17884.jpg */}
       <section 
         className="py-24 md:py-32 bg-gray-800 bg-cover bg-center bg-blend-overlay bg-opacity-60" 
         style={{ backgroundImage: `url(https://placehold.co/1920x1080/000000/FFFFFF?text=Blurred+Library)` }}

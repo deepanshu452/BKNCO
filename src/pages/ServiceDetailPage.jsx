@@ -32,7 +32,7 @@ function ServiceDetailPage() {
     // This 'fade-in-page' class provides the simple transition
     <div className="bg-white fade-in-page">
       
-      {/* === Section 1: Hero (matches image_57b567.jpg) === */}
+      {/* Section 1: Hero */}
       <section className="relative bg-gray-50 py-16 md:py-24 overflow-hidden curved-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -61,7 +61,7 @@ function ServiceDetailPage() {
         </div>
       </section>
 
-      {/* === Section 2: Accordion Services (matches image_57b580.png) === */}
+      {/* Section 2: Accordion Services */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6 ">
           <h2 className="text-4xl font-bold text-gray-900 mb-8" style={{ fontFamily: 'serif' }}>
@@ -71,9 +71,7 @@ function ServiceDetailPage() {
             {service.subServices.map((sub, index) => (
               <AccordionItem key={index} title={sub.title}>
                 <p>{sub.text}</p>
-                {/* You can add a "Read More" button here if needed 
-                  (like in image_57b569.png)
-                */}
+                {/* can add a "Read More" button here if needed */}
                 {/* <Link to="#" className="text-brand-blue font-semibold mt-4 inline-block">Read More &rarr;</Link> */}
               </AccordionItem>
             ))}

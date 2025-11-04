@@ -4,7 +4,7 @@ import ServiceDetailRow from '../components/ServiceDetailRow';
 // --- Service Data ---
 const servicesData = [
    {
-    title: "Taxation", // Updated from "Taxation Services"
+    title: "Taxation",
     slug: "taxation",
     items: [
       "Direct Tax Advisory & Compliance",
@@ -15,7 +15,7 @@ const servicesData = [
     imageAlt: "Taxation Services",
   },
   {
-    title: "Regulatory Advisory", // Updated from "Regulatory"
+    title: "Regulatory Advisory", 
     slug: "regulatory",
     items: [
       "Exchange Control Advisory (FEMA & FDI)",
@@ -40,7 +40,7 @@ const servicesData = [
     imageAlt: "Risk Advisory",
   },
   {
-    title: "CFO Services", // --- NEW ---
+    title: "CFO Services", 
     slug: "cfo-services",
     items: [
       "Financial Planning & Analysis",
@@ -65,7 +65,7 @@ const servicesData = [
     imageAlt: "Audit & Assurance",
   },
   {
-    title: "IPO Services", // --- NEW ---
+    title: "IPO Services", 
     slug: "ipo-services",
     items: [
       "IPO Readiness Assessment",
@@ -77,7 +77,7 @@ const servicesData = [
     imageAlt: "IPO Services",
   },
   {
-    title: "Valuation", // --- NEW ---
+    title: "Valuation",
     slug: "valuation",
     items: [
       "Business Valuation",
@@ -95,7 +95,6 @@ function ServicesPage() {
     <div className="bg-white">
       
       {/* === Section 1: Page Header === */}
-      {/* Based on image 55e088.png */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto px-6 text-center max-w-3xl">
           <div className="flex items-center justify-center text-brand-blue font-semibold mb-3">
@@ -111,8 +110,7 @@ function ServicesPage() {
         </div>
       </section>
 
-      {/* === Section 2: Service Details === */}
-      {/* We map over our data and render the reusable component */}
+      {/* Section 2: Service Details*/}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6 space-y-20 md:space-y-28">
           
@@ -124,10 +122,10 @@ function ServicesPage() {
               imageUrl={service.imageUrl}
               imageAlt={service.imageAlt}
               slug={service.slug}
-              // This is the magic!
+          
               // It passes 'true' for every even-indexed item (0, 2, 4...)
               // and 'false' for odd-indexed (1, 3, 5...)
-              // Wait, the images show Tax (left), Audit (right). So index 0 is normal, index 1 is reversed.
+              //  index 0 is normal, index 1 is reversed.
               reverse={index % 2 !== 0} 
             />
           ))}

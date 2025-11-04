@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// This is our reusable component for the alternating layout
-// We pass `reverse={true}` to flip the image and text
+// `reverse={true}` is used to flip the image and text
 function ServiceDetailRow({ title, items, imageUrl, imageAlt, reverse = false, slug }) {
   
   // This line adds 'md:flex-row-reverse' if the reverse prop is true
@@ -31,7 +30,7 @@ function ServiceDetailRow({ title, items, imageUrl, imageAlt, reverse = false, s
         <ul className="space-y-4 mb-8">
           {items.map((item, index) => (
             <li key={index} className="flex items-center">
-              {/* Red Circle Icon from the image */}
+              {/* Red Circle Icon */}
               <span className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>

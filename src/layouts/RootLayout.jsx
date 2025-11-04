@@ -1,5 +1,3 @@
-// This NEW file provides the shared layout for all pages
-
 import React from 'react';
 import { Outlet } from 'react-router-dom'; // Outlet is where the page content will go
 import TopBar from '../components/TopBar';

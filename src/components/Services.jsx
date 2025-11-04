@@ -1,11 +1,8 @@
 import React from 'react';
-
-// Helper component for each service card with the divider styling
 const ServiceCard = ({ title }) => {
   return (
-    // relative for the pseudo-element, px-4 for padding inside the column
     <div className="relative px-4 py-8 group">
-      {/* Vertical divider line */}
+      {/* Vertical divider line i.ie., seperator */}
       <div className="absolute left-0 top-0 bottom-0 w-px bg-brand-blue"></div>
       
       <h3 className="text-2xl font-semibold text-gray-900 mb-4">
@@ -36,7 +33,7 @@ const ServiceCard = ({ title }) => {
 };
 
 function Services() {
-  // Service list based on the image provided
+
   const services = [
     "Taxation",
     "Regulatory Advisory",

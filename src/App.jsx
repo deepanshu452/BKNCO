@@ -25,8 +25,8 @@ const router = createBrowserRouter([
         element: <ServicesPage />,
       },
       {
-        path: "services/:slug", // 2. This is the new DYNAMIC route
-        element: <ServiceDetailPage />, // It points to your new template
+        path: "services/:slug", //  This is the DYNAMIC route
+        element: <ServiceDetailPage />, 
       }
     ]
   }

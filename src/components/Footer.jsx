@@ -16,7 +16,7 @@ function Footer() {
             <p className="mb-4">
               Building trust through expertise, compliance, and innovation.
             </p>
-            {/* We can add social icons here too if needed */}
+            {/* can add social icons here too(for Future) */}
           </div>
 
           {/* Column 2: Quick Links */}
