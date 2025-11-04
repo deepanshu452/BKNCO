@@ -3,8 +3,8 @@ import ServiceDetailRow from '../components/ServiceDetailRow';
 
 // --- Service Data ---
 const servicesData = [
-  {
-    title: "Taxation Services",
+   {
+    title: "Taxation", // Updated from "Taxation Services"
     slug: "taxation",
     items: [
       "Direct Tax Advisory & Compliance",
@@ -15,20 +15,7 @@ const servicesData = [
     imageAlt: "Taxation Services",
   },
   {
-    title: "Audit & Assurance",
-    slug: "audit",
-    items: [
-      "Statutory Audit",
-      "Tax audit",
-      "Risk Assurance Services / Internal Audit",
-      "Group Reporting",
-      "Other Assurance Services"
-    ],
-    imageUrl: "https://placehold.co/600x450/EFEFEF/333333?text=Audit",
-    imageAlt: "Audit & Assurance",
-  },
-  {
-    title: "Regulatory",
+    title: "Regulatory Advisory", // Updated from "Regulatory"
     slug: "regulatory",
     items: [
       "Exchange Control Advisory (FEMA & FDI)",
@@ -36,8 +23,8 @@ const servicesData = [
       "Business Entity Services (set-up, closure, etc.)",
       "Corporate Compliance & Secretarial Support"
     ],
-    imageUrl: "https://placehold.co/600x450/054c7d/FFFFFF?text=Regulatory",
-    imageAlt: "Regulatory Services",
+    imageUrl: "https://placehold.co/600x450/EFEFEF/333333?text=Regulatory",
+    imageAlt: "Regulatory Advisory",
   },
   {
     title: "Risk Advisory",
@@ -49,8 +36,57 @@ const servicesData = [
       "Standard Operating Procedures (SOPs)",
       "Enterprise Risk Management (ERM)"
     ],
-    imageUrl: "https://placehold.co/600x450/EFEFEF/333333?text=Risk+Advisory",
+    imageUrl: "https://placehold.co/600x450/054c7d/FFFFFF?text=Risk+Advisory",
     imageAlt: "Risk Advisory",
+  },
+  {
+    title: "CFO Services", // --- NEW ---
+    slug: "cfo-services",
+    items: [
+      "Financial Planning & Analysis",
+      "Cash Flow Management",
+      "Strategic Financial Guidance",
+      "MIS Reporting"
+    ],
+    imageUrl: "https://placehold.co/600x450/EFEFEF/333333?text=CFO+Services",
+    imageAlt: "CFO Services",
+  },
+  {
+    title: "Audit & Assurance",
+    slug: "audit",
+    items: [
+      "Statutory Audit",
+      "Tax audit",
+      "Risk Assurance Services / Internal Audit",
+      "Group Reporting",
+      "Other Assurance Services"
+    ],
+    imageUrl: "https://placehold.co/600x450/054c7d/FFFFFF?text=Audit",
+    imageAlt: "Audit & Assurance",
+  },
+  {
+    title: "IPO Services", // --- NEW ---
+    slug: "ipo-services",
+    items: [
+      "IPO Readiness Assessment",
+      "Restated Financial Statements",
+      "Due Diligence Support",
+      "Post-IPO Compliance"
+    ],
+    imageUrl: "https://placehold.co/600x450/EFEFEF/333333?text=IPO+Services",
+    imageAlt: "IPO Services",
+  },
+  {
+    title: "Valuation", // --- NEW ---
+    slug: "valuation",
+    items: [
+      "Business Valuation",
+      "Financial Reporting Valuation",
+      "Regulatory Valuation (FEMA, Tax)",
+      "Intangible Asset Valuation"
+    ],
+    imageUrl: "https://placehold.co/600x450/054c7d/FFFFFF?text=Valuation",
+    imageAlt: "Valuation",
   },
 ];
 
