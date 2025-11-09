@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ServiceDetailPage from './pages/ServiceDetailPage';
 import ContactPage from './pages/ContactPage';
+import Insights from './pages/Insights';
 
 // Define routes
 const router = createBrowserRouter([
@@ -30,8 +31,12 @@ const router = createBrowserRouter([
         element: <ServiceDetailPage />, 
       },
       {
-        path: "contactus", //  This is the DYNAMIC route
+        path: "contactus", 
         element: <ContactPage />, 
+      },
+      {
+        path: "insights", 
+        element: <Insights/>, 
       }
     ]
   }

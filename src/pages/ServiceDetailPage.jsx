@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+// page for the each service 
+
+import { useEffect } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
 
 // Import our new data and components
@@ -52,8 +54,12 @@ function ServiceDetailPage() {
               <img 
                 src={service.imageUrl} 
                 alt={service.imageAlt} 
-                className="rounded-lg shadow-xl w-full max-w-md object-cover"
-                style={{ aspectRatio: '4/3' }}
+                className="object-cover shadow-xl"
+                style={{
+                  aspectRatio: "4/3",
+                  borderTopLeftRadius: "100px",
+                  borderBottomRightRadius: "100px",
+                }}
               />
             </div>
 

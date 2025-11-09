@@ -1,15 +1,16 @@
-import React from 'react';
-const ServiceCard = ({ title }) => {
+import { Link } from 'react-router-dom';
+
+
+const ServiceCard = ({ title, slug }) => {
   return (
-    <div className="relative px-4 py-8 group">
+    <div className="relative px-4 py-6 group">
       {/* Vertical divider line i.ie., seperator */}
       <div className="absolute left-0 top-0 bottom-0 w-px bg-brand-blue"></div>
       
       <h3 className="text-2xl font-semibold text-gray-900 mb-4">
         {title}
       </h3>
-      <a 
-        href="#"
+      <Link to = {`/services/${slug}`} 
         className="flex items-center text-brand-blue hover:text-brand-blue/80 transition-colors text-sm font-medium"
       >
         VIEW MORE
@@ -27,7 +28,7 @@ const ServiceCard = ({ title }) => {
                 d="M17 8l4 4m0 0l-4 4m4-4H3">
           </path>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };
@@ -35,17 +36,17 @@ const ServiceCard = ({ title }) => {
 function Services() {
 
   const services = [
-    "Taxation",
-    "Regulatory Advisory",
-    "Risk Advisory",
-    "CFO Services",
-    "Audit & Assurance",
-    "IPO Services",
-    "Valuation",
+    { title:"Taxation", slug:"taxation"},
+    {title:"Regulatory Advisory", slug:"regulatory"},
+    {title:"Risk Advisory", slug:"risk-advisory"},
+    {title:"CFO Services", slug:"cfo-services"},
+    {title:"Audit & Assurance", slug:"audit"},
+    {title:"IPO Services", slug:"ipo-services"},
+    {title:"Valuation", slug:"valuation"}
   ];
 
   return (
-    <section className="bg-gray-50 py-16 md:py-24">
+    <section className="bg-gray-50 py-6 md:py-24">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="mb-12">
@@ -60,8 +61,8 @@ function Services() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8">
-          {services.map((service, index) => (
-            <ServiceCard key={index} title={service} />
+          {services.map(({title, slug}) => (
+            <ServiceCard key={slug} title={title} slug={slug}/>
           ))}
         </div>
       </div>

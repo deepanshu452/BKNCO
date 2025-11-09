@@ -1,8 +1,7 @@
-import React from 'react';
-
 import Hero from '../components/Hero';
-import About from '../components/About'; // This is the homepage "About" snippet
+import About from '../components/About'; 
 import Services from '../components/Services';
+import FounderCard from '../components/FounderCard';
 
 function Home() {
   return (
@@ -13,6 +12,8 @@ function Home() {
       <section id="about-us">
         <About />
       </section>
+      
+      <FounderCard/>
 
       <section id="services">
         <Services />

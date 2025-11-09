@@ -1,4 +1,5 @@
-import React from 'react';
+// This is the page where all the servides are together
+
 import ServiceDetailRow from '../components/ServiceDetailRow';
 
 // --- Service Data ---
@@ -11,7 +12,7 @@ const servicesData = [
       "Transfer Pricing",
       "Indirect Taxes, GST, Customs & Foreign trade policy"
     ],
-    imageUrl: "https://placehold.co/600x450/054c7d/FFFFFF?text=Taxation",
+    imageUrl: "/assets/Taxation.jpg",
     imageAlt: "Taxation Services",
   },
   {
@@ -23,7 +24,7 @@ const servicesData = [
       "Business Entity Services (set-up, closure, etc.)",
       "Corporate Compliance & Secretarial Support"
     ],
-    imageUrl: "https://placehold.co/600x450/EFEFEF/333333?text=Regulatory",
+    imageUrl: "/assets/Regulatory.jpg",
     imageAlt: "Regulatory Advisory",
   },
   {
@@ -36,7 +37,7 @@ const servicesData = [
       "Standard Operating Procedures (SOPs)",
       "Enterprise Risk Management (ERM)"
     ],
-    imageUrl: "https://placehold.co/600x450/054c7d/FFFFFF?text=Risk+Advisory",
+    imageUrl: "/assets/Risk-Advisory-Services.jpg",
     imageAlt: "Risk Advisory",
   },
   {
@@ -48,7 +49,7 @@ const servicesData = [
       "Strategic Financial Guidance",
       "MIS Reporting"
     ],
-    imageUrl: "https://placehold.co/600x450/EFEFEF/333333?text=CFO+Services",
+    imageUrl: "assets/CFO.jpg",
     imageAlt: "CFO Services",
   },
   {
@@ -61,7 +62,7 @@ const servicesData = [
       "Group Reporting",
       "Other Assurance Services"
     ],
-    imageUrl: "https://placehold.co/600x450/054c7d/FFFFFF?text=Audit",
+    imageUrl: "/assets/Audit-Assurance-1.png",
     imageAlt: "Audit & Assurance",
   },
   {
@@ -73,7 +74,7 @@ const servicesData = [
       "Due Diligence Support",
       "Post-IPO Compliance"
     ],
-    imageUrl: "https://placehold.co/600x450/EFEFEF/333333?text=IPO+Services",
+    imageUrl: "assets/IPO-Services.jpg",
     imageAlt: "IPO Services",
   },
   {
@@ -85,7 +86,7 @@ const servicesData = [
       "Regulatory Valuation (FEMA, Tax)",
       "Intangible Asset Valuation"
     ],
-    imageUrl: "https://placehold.co/600x450/054c7d/FFFFFF?text=Valuation",
+    imageUrl: "assets/Valuation.jpg",
     imageAlt: "Valuation",
   },
 ];
@@ -94,7 +95,7 @@ function ServicesPage() {
   return (
     <div className="bg-white">
       
-      {/* === Section 1: Page Header === */}
+      {/* Section 1: Page Header */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto px-6 text-center max-w-3xl">
           <div className="flex items-center justify-center text-brand-blue font-semibold mb-3">

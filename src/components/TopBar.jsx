@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 // SVG Icons for social media.
 const LinkedInIcon = () => (
@@ -26,15 +26,15 @@ function TopBar() {
 
         {/* Right Side: Social Links */}
         <div className="flex space-x-4 items-center">
-          <a href="#" className="hover:text-brand-blue" aria-label="LinkedIn">
+          <Link to="/" className="hover:text-brand-blue" aria-label="LinkedIn">
             <LinkedInIcon />
-          </a>
-          <a href="#" className="hover:text-brand-blue" aria-label="Twitter">
+          </Link>
+          <Link to="/" className="hover:text-brand-blue" aria-label="Twitter">
             <TwitterIcon />
-          </a>
-          <a href="/contactus" className="bg-brand-blue text-white px-3 py-1 rounded-full text-xs font-semibold hover:bg-opacity-90 transition-colors">
+          </Link>
+          <Link to="/contactus" className="bg-brand-blue text-white px-3 py-1 rounded-full text-xs font-semibold hover:bg-opacity-90 transition-colors">
             Get in Touch
-          </a>
+          </Link>
         </div>
       </div>
     </div>

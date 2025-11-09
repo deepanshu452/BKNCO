@@ -1,1 +1,115 @@
 /* Any custom styles that don't conflict with Tailwind can go here */
+
+@media (prefers-reduced-motion: reduce) {
+  .transition-opacity, .transition-all { transition: none !important; }
+}
+
+
+/* page fade-in quick helper (already used in pages) */
+.fade-in-page {
+  animation: fadeIn 380ms ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animated underline for header links */
+/* Apply to elements with class .header-link (we added this in Header.jsx) */
+
+.header-link {
+  position: relative;
+  display: inline-block;
+  /* keep existing text color; underline handled by pseudo-element */
+}
+
+.header-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;            /* distance from text */
+  height: 2px;
+  width: 100%;
+  background-color: white; /* underline color for header */
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 180ms ease;
+  opacity: 0.95;
+  border-radius: 2px;
+}
+
+/* On hover or focus, scale the underline in */
+.header-link:hover::after,
+.header-link:focus::after,
+.header-link:active::after {
+  transform: scaleX(1);
+}
+
+/* Dropdown links use dark text; use a different underline color and position */
+.dropdown-link {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  background-color: #0b4c6c; /* brand-blue-ish for dropdown underline */
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 180ms ease;
+  opacity: 0.95;
+  border-radius: 2px;
+}
+
+/* animate dropdown underline on hover/focus */
+.dropdown-link:hover::after,
+.dropdown-link:focus::after,
+.dropdown-link:active::after {
+  transform: scaleX(1);
+}
+
+/* Improve click area for mobile summary element (details/summary) */
+details summary {
+  list-style: none;
+  outline: none;
+}
+
+/* small visual polish for desktop hover */
+.header-link:hover,
+.header-link:focus {
+  transform: translateY(-1px);
+  transition: transform 140ms ease;
+}
+
+
+/* padding to whole site*/
+.site-padding > * {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+@media (min-width: 768px) {
+  .site-padding > * {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-padding > * {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Remove padding ONLY from hero section */
+#hero-section {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+

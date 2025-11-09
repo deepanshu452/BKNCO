@@ -1,4 +1,3 @@
-import React from 'react';
 import { servicesData } from '../data/services';
 
 function ContactPage() {

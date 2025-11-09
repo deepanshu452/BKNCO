@@ -1,4 +1,4 @@
-import React from 'react';
+import hero from '/assets/CEO-AboutPage.png';
 
 // A component for the "Stats" section from the image
 // NOT IN USE CURRENTLY (If needed for future)
@@ -24,7 +24,7 @@ function AboutPage() {
   return (
     <div className="bg-white">
       
-      {/* === Section 1: "About our Company" === */}
+      {/*Section 1: "About our Company"*/}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="flex items-center text-brand-blue font-semibold mb-3">
@@ -34,7 +34,19 @@ function AboutPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-8" style={{ fontFamily: 'serif' }}>
             About our Company
           </h1>
-          <div className="text-gray-600 text-lg space-y-5 max-w-4xl">
+          {/* hero Image */}
+          <div className="rounded-lg overflow-hidden shadow-xl">
+              <img 
+                src="/assets/CEO-AboutPage.png" 
+                alt="Our Approach Handshake" 
+                className="w-full h-full object-cover"
+                // style={{
+                //   borderTopLeftRadius: "100px",
+                //   borderBottomRightRadius: "100px",
+                // }}
+              />
+            </div>
+          <div className="text-gray-600 text-lg max-w-full space-y-3  mt-10 text-center mx-auto">
             <p>We are a leading professional services firm in the country. Since its founding in 1984, the firm has continuously evolved and grown, diligently focusing on establishing itself as a benchmark for excellence in professional services.</p>
             <p>We serve businesses, governments, and multilateral bodies across industries and sectors, offering specialized services in Assurance, Taxation, Risk, M&A, Corporate Finance, Digital & Technology advisory, and more.</p>
             <p>Our people, 1500+ and growing, drive our success. With deep expertise across service lines, our team delivers clear, timely and actionable advice, ensuring quality in every client interaction.</p>
@@ -44,8 +56,8 @@ function AboutPage() {
       </section>
 
 
-      {/* === Section 3: "Our Approach" === */}
-      <section className="bg-gray-50 py-16 md:py-24">
+      {/*Section 3: "Our Approach"*/}
+      <section className="bg-gray-50 py-10 md:py-15 mx-10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left Column (Text) */}
@@ -64,7 +76,7 @@ function AboutPage() {
             {/* Right Column (Image) */}
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="https://placehold.co/600x400/054c7d/FFFFFF?text=Handshake" 
+                src="/assets/About-us-Our-Approach-1.png" 
                 alt="Our Approach Handshake" 
                 className="w-full h-full object-cover"
               />
@@ -73,8 +85,8 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* === Section 4: "Our Culture" === */}
-      <section className="py-16 md:py-24">
+      {/*Section 4: "Our Culture"*/}
+      <section className="py-6 md:pt-15 pb-24 mx-10">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mb-12">
             <div className="flex items-center text-brand-blue font-semibold mb-3">
@@ -103,10 +115,16 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* === Section 5: "BKN Foundation" (CSR) === */}
-      <section 
+      {/* Section 5: "BKN Foundation" (CSR)*/}
+      {/* <section 
         className="py-24 md:py-32 bg-gray-800 bg-cover bg-center bg-blend-overlay bg-opacity-60" 
-        style={{ backgroundImage: `url(https://placehold.co/1920x1080/000000/FFFFFF?text=Blurred+Library)` }}
+        style={{ backgroundImage: "/assets/CEO-AboutPage.png" }} 
+      > */}
+      <section
+        className="py-24 md:py-32 bg-cover bg-center min-h-full"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(${hero})`
+        }}
       >
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center text-white p-8 md:p-12 bg-black bg-opacity-50 rounded-lg">

@@ -1,8 +1,11 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom'; // Outlet is where the page content will go
+import React, { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 import TopBar from '../components/TopBar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+// Lazy-load MotionWrapper so framer-motion is only fetched when needed
+const MotionWrapper = React.lazy(() => import('../utils/MotionWrapper'));
 
 function RootLayout() {
   return (
@@ -10,10 +13,14 @@ function RootLayout() {
       <TopBar />
       <Header />
 
-      {/* "flex-grow" makes sure the footer stays at the bottom */}
-      <main className="flex-grow">
-        {/* Outlet renders the current page (e.g., Home or AboutPage) */}
-        <Outlet />
+      {/* main content area */}
+      <main className="flex-grow site-padding">
+        
+        <Suspense fallback={<div />}>
+          <MotionWrapper>
+            <Outlet />
+          </MotionWrapper>
+        </Suspense>
       </main>
 
       <Footer />

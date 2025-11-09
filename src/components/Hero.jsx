@@ -1,37 +1,129 @@
-import React from 'react';
-import heroImageUrl from '../assets/banner-img.jpg';
+import React, { useEffect, useRef, useState } from 'react';
 
-function Hero() {
+const slides = [
+  { src: '/assets/hero1.jpeg', 
+    alt: 'Empowering Growth', 
+    title: 'Empowering Growth', 
+    subtitle: 'Strategies to scale with confidence' },
+
+  { src: '/assets/hero2.jpeg', 
+    alt: 'Ensuring Compliance', 
+    title: 'Ensuring Compliance', 
+    subtitle: 'Robust structures. Trusted advice.' },
+
+  { src: '/assets/hero3.jpeg', 
+    alt: 'Enabling Confidence', 
+    title: 'Enabling Confidence', 
+    subtitle: 'Insight-driven financial leadership' },
+
+  { src: '/assets/hero4.jpeg', 
+    alt: 'Partnering for Success', 
+    title: 'Partnering for Success', 
+    subtitle: 'Long-term value, measurable results' },
+];
+
+export default function Hero() {
+  const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const intervalRef = useRef(null);
+  const SLIDE_MS = 2000;
+
+// debug for console
+  useEffect(() => {
+    slides.forEach((s) => console.log('[Hero] image path:', s.src));
+  }, []);
+
+  // autoplay
+  useEffect(() => {
+    if (!paused) {
+      intervalRef.current = setInterval(() => {
+        setIndex((i) => (i + 1) % slides.length);
+      }, SLIDE_MS);
+    }
+    return () => clearInterval(intervalRef.current);
+  }, [paused]);
+
+  // keyboard nav
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'ArrowRight') setIndex((i) => (i + 1) % slides.length);
+      if (e.key === 'ArrowLeft') setIndex((i) => (i - 1 + slides.length) % slides.length);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  const prev = () => setIndex((i) => (i - 1 + slides.length) % slides.length);
+  const next = () => setIndex((i) => (i + 1) % slides.length);
+
+  // helper to log image load errors for quick debugging
+  const onImgError = (src) => {
+    console.error(`[Hero] failed to load image: ${src} — check public/assets and filename/spelling`);
+  };
+
   return (
-    <div
-      className="relative bg-cover bg-center text-white min-h-[36rem]"
-      style={{ backgroundImage: `url(${heroImageUrl})` }}
+    <section id="hero-section"
+      className="relative w-full min-h-[38rem] overflow-hidden"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocus={() => setPaused(true)}
+      onBlur={() => setPaused(false)}
+      aria-roledescription="carousel"
+      aria-label="Hero carousel"
     >
-      {/* Overlay*/}
-      <div className="absolute inset-0 bg-black opacity-40">
+      {/* image stack */}
+      <div className="absolute inset-0">
+        {slides.map((s, i) => (
+          <img
+            key={i}
+            src={s.src}
+            alt={s.alt}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-linear ${i === index ? 'opacity-100 z-0' : 'opacity-0 z-0'}`}
+            loading={i === 0 ? 'eager' : 'lazy'}
+            onError={() => onImgError(s.src)}
+            style={{ left: 0, top: 0 }}
+          />
+        ))}
+        {/* overlay for text legibility */}
+        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+      </div>
 
+      {/* foreground content */}
+      <div className="relative z-20 container mx-auto px-20 py-28 md:py-36 text-white">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4" style={{ fontFamily: 'serif' }}>
+            {slides[index].title}
+          </h1>
+          <p className="text-lg md:text-xl mb-8 text-gray-100/90">{slides[index].subtitle}</p>
+
+          <div className="flex items-center gap-4">
+            <a href="/services" className="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-opacity-90 transition">
+              Discover Our Services
+            </a>
+
+            <div className="flex items-center gap-2">
+              {slides.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setIndex(i)}
+                  className={`w-3 h-3 rounded-full transition-all focus:outline-none ${i === index ? 'bg-white scale-110' : 'bg-white/50 hover:bg-white'}`}
+                  aria-label={`Go to slide ${i + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div className="container mx-auto px-6 py-32 md:py-48 relative z-10">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
-          Empowering Growth
-          <br />
-          Ensuring Compliance
-          <br />
-          Enabling Confidence
-        </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl">
-          Delivering excellence across Audit & Assurance, Taxation, Regulatory, Risk Advisory, and CFO Services — empowering businesses of every scale to achieve financial integrity and sustainable growth
-        </p>
-        <a 
-          href="#" 
-          className="bg-brand-blue text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-opacity-90 transition-colors"
-        >
-          Discover Our Services
-        </a>
+
+      {/* prev/next */}
+      <div className="absolute inset-y-0 right-6 flex items-center gap-3 z-30 hidden md:flex">
+        <button onClick={prev} className="bg-black/40 p-2 rounded-full hover:bg-black/50 transition" aria-label="Previous slide">
+          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" /></svg>
+        </button>
+        <button onClick={next} className="bg-black/40 p-2 rounded-full hover:bg-black/50 transition" aria-label="Next slide">
+          <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
+        </button>
       </div>
-    </div>
+    </section>
   );
 }
-
-export default Hero;
