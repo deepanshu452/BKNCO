@@ -1,15 +1,6 @@
 import useScrollReveal from '../hooks/useScrollReveal';
 
-export default function FounderCard({
-  name = 'Rakesh Nangia',
-  title = 'Founder & Managing Partner',
-  imgSrc = '/assets/Bhavesh-CEO.webp', 
-  imgAlt = 'Portrait of the founder',
-  shortBio = `At B K N & CO LLP, our commitment to excellence and a client-first approach drives
-  everything we do. With deep industry experience, we deliver practical, high-quality
-  advisory and assurance services that help organizations grow sustainably.`,
-  quote = `Integrity, excellence and client-first thinking guide every decision we make.`,
-}) {
+export default function FounderCard(props) {
 
   useScrollReveal();
   return (
@@ -18,7 +9,8 @@ export default function FounderCard({
       className="bg-white px-6 py-6 md:py-20 reveal"
     >
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 lg:gap-4 items-center">
+
           
           {/* Left column: text */}
           <div>
@@ -36,17 +28,17 @@ export default function FounderCard({
             </h2>
 
             <p className="text-base text-gray-600 mb-6 max-w-xl">
-              {shortBio}
+              {props.shortBio}
             </p>
 
             <blockquote className="border-l-4 border-brand-blue pl-4 italic text-gray-700 mb-6 max-w-xl">
-              “{quote}”
+              “{props.quote}”
             </blockquote>
 
             <div className="flex items-center gap-4">
               <div>
-                <p className="text-lg font-semibold text-gray-900">{name}</p>
-                <p className="text-sm text-gray-500">{title}</p>
+                <p className="text-lg font-semibold text-gray-900">{props.name}</p>
+                <p className="text-sm text-gray-500">{props.title}</p>
               </div>
 
               {/* small CTA — optional */}
@@ -61,16 +53,15 @@ export default function FounderCard({
           </div>
 
           {/* Right column: portrait card */}
-          <div className="relative flex justify-center lg:space-around lg:-ml-10">
-            <div
-              className="w-full max-w-sm bg-neutral-50 rounded-3xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-1"
-              aria-hidden="false"
-            >
+          <div className="relative flex justify-center md:justify-start lg:justify-end lg:-ml-10 mt-10 md:mt-0">
+
+            <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-full max-w-sm bg-neutral-50 rounded-3xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-1">
+
               {/* container with rounded corner */}
               <div className="relative">
                 <img
-                  src={imgSrc}
-                  alt={imgAlt}
+                  src={props.imgSrc}
+                  alt={props.imgAlt}
                   loading="lazy"
                   className="w-full h-full object-cover block"
                   style={{ aspectRatio: '3/4' }}
@@ -78,8 +69,8 @@ export default function FounderCard({
               </div>
 
               <div className="px-6 py-5 bg-white">
-                <p className="text-lg font-semibold text-gray-900">{name}</p>
-                <p className="text-sm text-gray-500">{title}</p>
+                <p className="text-lg font-semibold text-gray-900">{props.name}</p>
+                <p className="text-sm text-gray-500">{props.title}</p>
               </div>
             </div>
           </div>

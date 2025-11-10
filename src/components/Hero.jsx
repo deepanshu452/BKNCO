@@ -89,7 +89,7 @@ export default function Hero() {
       </div>
 
       {/* foreground content */}
-      <div className="relative z-20 container mx-auto px-20 py-28 md:py-36 text-white">
+      <div className="relative z-20 container mx-auto px-5 py-28 md:py-36 text-white">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4" style={{ fontFamily: 'serif' }}>
             {slides[index].title}
@@ -97,7 +97,7 @@ export default function Hero() {
           <p className="text-lg md:text-xl mb-8 text-gray-100/90">{slides[index].subtitle}</p>
 
           <div className="flex items-center gap-4">
-            <a href="/services" className="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-opacity-90 transition">
+            <a href="/services" className="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-4 py-3 rounded-lg shadow-lg hover:bg-opacity-90 transition">
               Discover Our Services
             </a>
 
