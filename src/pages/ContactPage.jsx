@@ -88,11 +88,16 @@ function ContactPage() {
             </div>
 
             {/* Right Column: Image */}
-            <div className="w-full h-full min-h-[300px] rounded-lg overflow-hidden shadow-xl">
+            <div className="w-full h-full min-h-[300px] ">
               <img 
-                src="https://placehold.co/600x700/054c7d/FFFFFF?text=BKN+Office" 
+                src="/assets/contactus.webp" 
                 alt="B K N & CO LLP Office" 
-                className="w-full h-full object-cover"
+                className="object-cover shadow-xl"
+                 style={{
+                  aspectRatio: "4/3",
+                  borderTopLeftRadius: "100px",
+                  borderBottomRightRadius: "100px",
+                }}
               />
             </div>
 
@@ -107,7 +112,12 @@ function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             
             {/* Left Column: Google Map */}
-            <div className="w-full h-[450px] rounded-lg overflow-hidden shadow-xl">
+            <div className="w-full h-[450px] rounded-lg overflow-hidden shadow-xl"
+             style={{
+                  aspectRatio: "4/3",
+                  borderTopRightRadius: "100px",
+                  borderBottomLeftRadius: "100px",
+                }}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.485128037042!2d72.84439007521101!3d19.26162388201502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e515d02231%3A0xe7a76689d90527c!2sOm%20Shankheshwar%20Tower!5e0!3m2!1sen!2sin!4v1724000000000!5m2!1sen!2sin"
                 width="100%"

@@ -1,22 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const slides = [
-  { src: '/assets/hero1.jpeg', 
+  { src: '/assets/hero1.webp', 
     alt: 'Empowering Growth', 
     title: 'Empowering Growth', 
     subtitle: 'Strategies to scale with confidence' },
 
-  { src: '/assets/hero2.jpeg', 
+  { src: '/assets/hero2.webp', 
     alt: 'Ensuring Compliance', 
     title: 'Ensuring Compliance', 
     subtitle: 'Robust structures. Trusted advice.' },
 
-  { src: '/assets/hero3.jpeg', 
+  { src: '/assets/hero3.webp', 
     alt: 'Enabling Confidence', 
     title: 'Enabling Confidence', 
     subtitle: 'Insight-driven financial leadership' },
 
-  { src: '/assets/hero4.jpeg', 
+  { src: '/assets/hero4.webp', 
     alt: 'Partnering for Success', 
     title: 'Partnering for Success', 
     subtitle: 'Long-term value, measurable results' },

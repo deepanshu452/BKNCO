@@ -1,4 +1,4 @@
-import hero from '/assets/CEO-AboutPage.png';
+import hero from '/assets/CEO-AboutPage.webp';
 
 // A component for the "Stats" section from the image
 // NOT IN USE CURRENTLY (If needed for future)
@@ -37,9 +37,10 @@ function AboutPage() {
           {/* hero Image */}
           <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/assets/CEO-AboutPage.png" 
+                src="/assets/CEO-AboutPage.webp" 
                 alt="Our Approach Handshake" 
                 className="w-full h-full object-cover"
+                loading="lazy"
                 // style={{
                 //   borderTopLeftRadius: "100px",
                 //   borderBottomRightRadius: "100px",
@@ -76,9 +77,10 @@ function AboutPage() {
             {/* Right Column (Image) */}
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/assets/About-us-Our-Approach-1.png" 
+                src="/assets/About-us-Our-Approach-1.webp" 
                 alt="Our Approach Handshake" 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -122,6 +124,7 @@ function AboutPage() {
       > */}
       <section
         className="py-24 md:py-32 bg-cover bg-center min-h-full"
+        loading="lazy"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(${hero})`
         }}

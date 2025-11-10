@@ -5,7 +5,7 @@ export const servicesData = [
   {
     title: "Taxation",
     slug: "taxation",
-    imageUrl: "/assets/Taxation.jpg",
+    imageUrl: "/assets/Taxation.webp",
     imageAlt: "Taxation Services",
     mainDescription: "The constantly evolving Indian tax landscape requires specialized corporate tax advisory. We assist businesses at every stage of their lifecycle, helping them navigate tax complexities both domestically and in cross-border transactions. Our goal is to provide large multinationals, mid-sized businesses, and entrepreneurs with holistic, tax-effective solutions.",
     subServices: [
@@ -26,7 +26,7 @@ export const servicesData = [
   {
     title: "Regulatory Advisory",
     slug: "regulatory",
-    imageUrl: "/assets/Regulatory.jpg",
+    imageUrl: "/assets/Regulatory.webp",
     imageAlt: "Regulatory Advisory",
     mainDescription: "We provide expert guidance on navigating India's complex regulatory landscape. Our team assists multinational and domestic companies with compliance under FEMA, FDI policies, and corporate laws, ensuring your business operations are structured for both compliance and efficiency from entry to exit.",
     subServices: [
@@ -47,7 +47,7 @@ export const servicesData = [
   {
     title: "Risk Advisory",
     slug: "risk-advisory",
-    imageUrl: "/assets/Risk-Advisory-Services.jpg",
+    imageUrl: "/assets/Risk-Advisory-Services.webp",
     imageAlt: "Risk Advisory",
     mainDescription: "In an environment of increasing complexity and risk, we help organizations build resilience. Our Risk Advisory services focus on identifying, assessing, and managing risks to protect your enterprise value and enhance performance.",
     subServices: [
@@ -68,7 +68,7 @@ export const servicesData = [
   {
     title: "CFO Services",
     slug: "cfo-services",
-    imageUrl: "assets/CFO.jpg",
+    imageUrl: "/assets/CFO.webp",
     imageAlt: "CFO Services",
     mainDescription: "Our Virtual CFO services provide high-level strategic financial expertise without the cost of a full-time executive. We partner with startups, SMEs, and growing businesses to manage financial planning, reporting, and strategy, allowing you to focus on your core operations.",
     subServices: [
@@ -89,7 +89,7 @@ export const servicesData = [
   {
     title: "Audit & Assurance",
     slug: "audit",
-    imageUrl: "/assets/Audit-Assurance-1.png",
+    imageUrl: "/assets/Audit-Assurance-1.webp",
     imageAlt: "Audit & Assurance",
     mainDescription: "We provide high-quality, independent audit and assurance services that enhance the reliability and credibility of financial information. Our approach is underpinned by a deep understanding of your business, industry, and the risks you face, ensuring compliance and stakeholder confidence.",
     subServices: [
@@ -110,7 +110,7 @@ export const servicesData = [
   {
     title: "IPO Services",
     slug: "ipo-services",
-    imageUrl: "assets/IPO-Services.jpg",
+    imageUrl: "/assets/IPO-Services.webp",
     imageAlt: "IPO Services",
     mainDescription: "Taking your company public is a transformative event. Our dedicated IPO services team guides you through every phase of the journey, from pre-IPO readiness and structuring to managing the complexities of the listing process and post-IPO compliance.",
     subServices: [
@@ -127,7 +127,7 @@ export const servicesData = [
   {
     title: "Valuation",
     slug: "valuation",
-    imageUrl: "assets/Valuation.jpg",
+    imageUrl: "/assets/Valuation.webp",
     imageAlt: "Valuation",
     mainDescription: "We provide independent and robust valuation services for businesses, assets, and financial instruments. Our valuations are required for transactions, financial reporting, regulatory compliance, and dispute resolution, and are backed by deep industry knowledge and technical expertise.",
     subServices: [

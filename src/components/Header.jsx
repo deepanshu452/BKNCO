@@ -31,6 +31,15 @@ export default function Header() {
           B K N & CO LLP
         </Link>
 
+        {/* Logo */}
+        {/* <Link to="/" className="header-link" aria-label="B K N & CO LLP Homepage">
+          <img 
+            src="/logo2.svg" 
+            alt="B K N & CO LLP " 
+            className="h-10 w-auto" 
+          />
+        </Link> */}
+
         {/* Desktop nav */}
         <div className="hidden md:flex space-x-6 items-center">
           <Link to="/about" className="hover:text-gray-300 header-link">About Us</Link>

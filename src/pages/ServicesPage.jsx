@@ -12,7 +12,7 @@ const servicesData = [
       "Transfer Pricing",
       "Indirect Taxes, GST, Customs & Foreign trade policy"
     ],
-    imageUrl: "/assets/Taxation.jpg",
+    imageUrl: "/assets/Taxation.webp",
     imageAlt: "Taxation Services",
   },
   {
@@ -24,7 +24,7 @@ const servicesData = [
       "Business Entity Services (set-up, closure, etc.)",
       "Corporate Compliance & Secretarial Support"
     ],
-    imageUrl: "/assets/Regulatory.jpg",
+    imageUrl: "/assets/Regulatory.webp",
     imageAlt: "Regulatory Advisory",
   },
   {
@@ -37,7 +37,7 @@ const servicesData = [
       "Standard Operating Procedures (SOPs)",
       "Enterprise Risk Management (ERM)"
     ],
-    imageUrl: "/assets/Risk-Advisory-Services.jpg",
+    imageUrl: "/assets/Risk-Advisory-Services.webp",
     imageAlt: "Risk Advisory",
   },
   {
@@ -49,7 +49,7 @@ const servicesData = [
       "Strategic Financial Guidance",
       "MIS Reporting"
     ],
-    imageUrl: "assets/CFO.jpg",
+    imageUrl: "assets/CFO.webp",
     imageAlt: "CFO Services",
   },
   {
@@ -62,7 +62,7 @@ const servicesData = [
       "Group Reporting",
       "Other Assurance Services"
     ],
-    imageUrl: "/assets/Audit-Assurance-1.png",
+    imageUrl: "/assets/Audit-Assurance-1.webp",
     imageAlt: "Audit & Assurance",
   },
   {
@@ -74,7 +74,7 @@ const servicesData = [
       "Due Diligence Support",
       "Post-IPO Compliance"
     ],
-    imageUrl: "assets/IPO-Services.jpg",
+    imageUrl: "assets/IPO-Services.webp",
     imageAlt: "IPO Services",
   },
   {
@@ -86,7 +86,7 @@ const servicesData = [
       "Regulatory Valuation (FEMA, Tax)",
       "Intangible Asset Valuation"
     ],
-    imageUrl: "assets/Valuation.jpg",
+    imageUrl: "assets/Valuation.webp",
     imageAlt: "Valuation",
   },
 ];

@@ -3,7 +3,7 @@ import useScrollReveal from '../hooks/useScrollReveal';
 export default function FounderCard({
   name = 'Rakesh Nangia',
   title = 'Founder & Managing Partner',
-  imgSrc = '/assets/Bhavesh-CEO.png', 
+  imgSrc = '/assets/Bhavesh-CEO.webp', 
   imgAlt = 'Portrait of the founder',
   shortBio = `At B K N & CO LLP, our commitment to excellence and a client-first approach drives
   everything we do. With deep industry experience, we deliver practical, high-quality
