@@ -97,7 +97,7 @@ export default function Hero() {
           <p className="text-lg md:text-xl mb-8 text-gray-100/90">{slides[index].subtitle}</p>
 
           <div className="flex items-center gap-4">
-            <Link href="/services" className="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-4 py-3 rounded-lg shadow-lg hover:bg-opacity-90 transition">
+            <Link to="/services" className="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-4 py-3 rounded-lg shadow-lg hover:bg-opacity-90 transition">
               Discover Our Services
             </Link>
 
