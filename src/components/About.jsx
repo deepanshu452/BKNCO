@@ -14,13 +14,13 @@ export default function About() {
               ABOUT US
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-              A forward-looking firm for integrated financial, regulatory, and risk advisory.
+              A forward-looking firm for integrated financial, regulatory,risk advisory and many more.
             </h2>
           </div>
 
           <div className="text-gray-600 text-base lg:text-lg space-y-5">
             <p>B K N &amp; CO LLP is a forward-looking Chartered Accountancy firm established by CA Amit Jain, CA Bhavesh Jain, and CA Krishna Maheshwari. We provide integrated financial, regulatory, and risk advisory solutions to help businesses navigate complexity with clarity.</p>
-            <p>With technical expertise and industry insight, we support organizations in enhancing governance, strengthening financial systems, and achieving sustainable growth through integrity and precision.</p>
+            <p>We are dedicated to providing insightful and independent assurance services designed to strengthen our clients' positions in today’s complex and dynamic business environment.</p>
 
             <Link to="/about" className="inline-flex items-center gap-2 px-6 py-2 bg-brand-blue text-white rounded-lg shadow hover:scale-[1.02] transition">
               READ MORE

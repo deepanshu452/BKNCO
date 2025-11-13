@@ -7,49 +7,29 @@ export const servicesData = [
     slug: "taxation",
     imageUrl: "/assets/Taxation.webp",
     imageAlt: "Taxation Services",
-    mainDescription: "The constantly evolving Indian tax landscape requires specialized corporate tax advisory. We assist businesses at every stage of their lifecycle, helping them navigate tax complexities both domestically and in cross-border transactions. Our goal is to provide large multinationals, mid-sized businesses, and entrepreneurs with holistic, tax-effective solutions.",
+    mainDescription: "The constantly evolving Indian tax landscape requires specialized corporate tax advisory. We assist businesses at every stage of their lifecycle, helping them navigate tax complexities both domestically and in cross-border transactions. Our goal is to provide large multinationals, mid-sized businesses, and entrepreneurs with holistic, tax-effective solutions",
     subServices: [
       {
-        title: "Direct Tax Advisory & Compliance",
-        text: "Our firm provides comprehensive Corporate Tax services aligned with Indian Income Tax Laws, helping businesses identify tax planning opportunities, minimize tax liabilities, and optimize outcomes through business reorganizations. We specialize in structuring outbound and inbound transactions and managing cross-border financing."
+        title: "Corporate Tax",
+        text: "Our firm offers comprehensive Corporate Tax services in line with Indian Income Tax Laws, identifies tax planning opportunities to minimize tax liability, and advises on business reorganization from a fiscal perspective to optimize tax outcomes."
       },
       {
-        title: "Transfer Pricing",
-        text: "We provide end-to-end transfer pricing solutions, from planning and documentation to representation before tax authorities. Our team helps you develop and implement commercially viable transfer pricing policies that mitigate risks and align with your global business objectives."
+        title: "Representation & Litigation Support Services",
+        text: "Our experts offer comprehensive Representation & Litigation support services, focusing on efficient issue resolution. We provide representation before Indian tax authorities and appellate forums, including the Commissioner (Appeals) and Appellate Tribunals."
       },
       {
         title: "Indirect Taxes, GST, Customs & Foreign trade policy",
-        text: "We offer comprehensive advisory and compliance services for GST, Customs, and other indirect taxes. Our expertise covers GST implementation, compliance automation, litigation support, and strategic advice on foreign trade policies to optimize your supply chain and reduce tax leakages."
+        text: "We provide a comprehensive range of indirect tax services across multiple sectors, assisting multinational and domestic clients with indirect tax optimization strategies. Our team of indirect tax experts with deep industry knowledge offer sector-focused expertise, providing litigation support, representation before judicial authorities, advance rulings, anti-profiteering studies, due diligence, refund processing, tax health checks, credit reviews, and audit support."
       }
     ]
   },
-  {
-    title: "Regulatory Advisory",
-    slug: "regulatory",
-    imageUrl: "/assets/Regulatory.webp",
-    imageAlt: "Regulatory Advisory",
-    mainDescription: "We provide expert guidance on navigating India's complex regulatory landscape. Our team assists multinational and domestic companies with compliance under FEMA, FDI policies, and corporate laws, ensuring your business operations are structured for both compliance and efficiency from entry to exit.",
-    subServices: [
-      {
-        title: "Exchange Control Advisory (FEMA & FDI)",
-        text: "We guide foreign and Indian entities through the intricacies of the Foreign Exchange Management Act (FEMA) and Foreign Direct Investment (FDI) policies. Our services include structuring investments, ensuring compliance for inbound/outbound transactions, and securing requisite approvals."
-      },
-      {
-        title: "Compounding & Representation Services",
-        text: "We represent clients before regulatory authorities like the RBI, ROC, and NCLT, handling applications for compounding of offenses and seeking clarifications or approvals. We help you regularize non-compliance and mitigate potential penalties."
-      },
-      {
-        title: "Business Entity Services (set-up, closure, etc.)",
-        text: "We manage the complete lifecycle of your business entity, from incorporation of companies and LLPs to post-incorporation compliance, corporate restructuring, and procedures for voluntary closure or liquidation."
-      }
-    ]
-  },
+  
   {
     title: "Risk Advisory",
     slug: "risk-advisory",
     imageUrl: "/assets/Risk-Advisory-Services.webp",
     imageAlt: "Risk Advisory",
-    mainDescription: "In an environment of increasing complexity and risk, we help organizations build resilience. Our Risk Advisory services focus on identifying, assessing, and managing risks to protect your enterprise value and enhance performance.",
+    mainDescription: "In today’s dynamic environment, changing business models and increasing regulatory landscape, risk management is a high priority for audit committees, board members and senior management of the organizations. Reputation management with key stakeholders and regulatory authorities is vital in the best interest of business and organisational relationships and business continuity.",
     subServices: [
       {
         title: "Internal Audit",
@@ -65,27 +45,7 @@ export const servicesData = [
       }
     ]
   },
-  {
-    title: "CFO Services",
-    slug: "cfo-services",
-    imageUrl: "/assets/CFO.webp",
-    imageAlt: "CFO Services",
-    mainDescription: "Our Virtual CFO services provide high-level strategic financial expertise without the cost of a full-time executive. We partner with startups, SMEs, and growing businesses to manage financial planning, reporting, and strategy, allowing you to focus on your core operations.",
-    subServices: [
-      {
-        title: "Financial Planning & Analysis (FP&A)",
-        text: "We build dynamic financial models, prepare annual budgets and rolling forecasts, and provide insightful variance analysis to support your strategic decision-making and drive business performance."
-      },
-      {
-        title: "Cash Flow Management",
-        text: "We implement robust cash flow forecasting and working capital management processes to optimize your liquidity, improve your cash conversion cycle, and ensure financial stability."
-      },
-      {
-        title: "MIS Reporting",
-        text: "We design and deliver customized Management Information System (MIS) reports and dashboards, providing you with timely, accurate, and actionable data on key performance indicators (KPIs)."
-      }
-    ]
-  },
+ 
   {
     title: "Audit & Assurance",
     slug: "audit",
@@ -112,10 +72,10 @@ export const servicesData = [
     slug: "ipo-services",
     imageUrl: "/assets/IPO-Services.webp",
     imageAlt: "IPO Services",
-    mainDescription: "Taking your company public is a transformative event. Our dedicated IPO services team guides you through every phase of the journey, from pre-IPO readiness and structuring to managing the complexities of the listing process and post-IPO compliance.",
+    mainDescription: "The rise in initial public offerings (IPOs) worldwide marks a crucial milestone for companies aiming to achieve financial success. An IPO not only unlocks substantial financial potential and serves as a pivotal step toward realizing growth ambitions but also demands a long-term commitment from all stakeholders and management. A successful IPO hinges on comprehensive planning and meticulous execution to meet compliance requirements while showcasing your business’s value.",
     subServices: [
       {
-        title: "IPO Readiness Assessment",
+        title: "Preparation Stage: Preparing the company for funds raising through Pre-IPO and/or IPO funding",
         text: "We conduct a comprehensive assessment of your company's readiness for an IPO, evaluating your financial reporting systems, corporate governance structure, and legal compliance to identify and address gaps."
       },
       {
@@ -124,22 +84,6 @@ export const servicesData = [
       }
     ]
   },
-  {
-    title: "Valuation",
-    slug: "valuation",
-    imageUrl: "/assets/Valuation.webp",
-    imageAlt: "Valuation",
-    mainDescription: "We provide independent and robust valuation services for businesses, assets, and financial instruments. Our valuations are required for transactions, financial reporting, regulatory compliance, and dispute resolution, and are backed by deep industry knowledge and technical expertise.",
-    subServices: [
-      {
-        title: "Business Valuation",
-        text: "We perform comprehensive valuations of businesses and equity interests for mergers, acquisitions, divestitures, shareholder disputes, and strategic planning purposes."
-      },
-      {
-        title: "Financial Reporting Valuation",
-        text: "We provide valuations for purchase price allocation (PPA) in business combinations, impairment testing of goodwill and intangible assets, and fair value measurements as required under Ind AS, IFRS, and US GAAP."
-      }
-    ]
-  },
+ 
 ];
 

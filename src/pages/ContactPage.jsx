@@ -4,7 +4,7 @@ function ContactPage() {
   return (
     <div className="bg-white fade-in-page">
       
-      {/* --- Section 1: Get in Touch (Form) --- */}
+      {/*Section 1: Get in Touch (Form)*/}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -20,7 +20,7 @@ function ContactPage() {
               </h1>
               
               <form 
-                action="https://formspree.io/f/xwpwdrvd" 
+                action="https://formspree.io/f/xyzlznje" 
                 method="POST" 
                 className="space-y-6"
               >
@@ -28,7 +28,7 @@ function ContactPage() {
                   <label htmlFor="full-name" className="sr-only">Full Name</label>
                   <input
                     type="text"
-                    name="full-name" // 'name' attribute is required for Formspree
+                    name="full-name" // 'name' is required for Formspree
                     id="full-name"
                     autoComplete="name"
                     className="block w-full rounded-md border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-blue sm:text-sm sm:leading-6"
@@ -105,7 +105,7 @@ function ContactPage() {
         </div>
       </section>
 
-      {/* --- Section 2: Find Us (Map) --- */}
+      {/* Section 2: Find Us (Map)*/}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           {/* This grid layout now has the map on the left */}
@@ -142,12 +142,13 @@ function ContactPage() {
                 </p>
                 <p>
                   <strong>Email:</strong><br />
-                  <a href="mailto:info@bknco.com" className="text-brand-blue hover:underline">info@bknco.com</a>
+                  <a href="mailto:info@bknco.com" className="text-brand-blue hover:underline"> bknco2810@gmail.com</a>
                 </p>
                 <p>
                   <strong>Phone:</strong><br />
-                  +91 977 367 5665<br />
-                  +91 701 405 3583
+                  +91 977 367 5665<br/>
+                  +91 701 405 3583<br/>
+                  +91 865 510 5483
                 </p>
               </div>
             </div>

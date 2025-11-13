@@ -1,4 +1,4 @@
-import hero from '/assets/CEO-AboutPage.webp';
+import hero from '/assets/About.webp';
 
 // A component for the "Stats" section from the image
 // NOT IN USE CURRENTLY (If needed for future)
@@ -25,33 +25,33 @@ function AboutPage() {
     <div className="bg-white">
       
       {/*Section 1: "About our Company"*/}
-      <section className="bg-gray-50 py-16 md:py-24">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center text-brand-blue font-semibold mb-3">
+      <section className="bg-gray-50 py-6 md:py-4">
+        <div className="container mx-auto px-2">
+          <div className="px-[40px] flex items-center text-brand-blue font-semibold mb-3">
             <span className="flex-shrink-0 w-3 h-3 bg-brand-blue rounded-full mr-2"></span>
             ABOUT US
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-8" style={{ fontFamily: 'serif' }}>
+          <h1 className="px-[40px] text-3xl md:text-6xl font-bold text-gray-900 leading-tight mb-8" style={{ fontFamily: 'serif' }}>
             About our Company
           </h1>
           {/* hero Image */}
           <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/assets/CEO-AboutPage.webp" 
+                src={`${hero}`}
                 alt="Our Approach Handshake" 
-                className="w-full h-full object-cover"
+                className="w-full h-[200vh] object-cover"
                 loading="lazy"
+                aspect-ratio="3/4"
                 // style={{
                 //   borderTopLeftRadius: "100px",
                 //   borderBottomRightRadius: "100px",
                 // }}
               />
             </div>
-          <div className="text-gray-600 text-lg max-w-full space-y-3  mt-10 text-center mx-auto">
-            <p>We are a leading professional services firm in the country. Since its founding in 1984, the firm has continuously evolved and grown, diligently focusing on establishing itself as a benchmark for excellence in professional services.</p>
-            <p>We serve businesses, governments, and multilateral bodies across industries and sectors, offering specialized services in Assurance, Taxation, Risk, M&A, Corporate Finance, Digital & Technology advisory, and more.</p>
-            <p>Our people, 1500+ and growing, drive our success. With deep expertise across service lines, our team delivers clear, timely and actionable advice, ensuring quality in every client interaction.</p>
-            <p>We pride ourselves on adapting global expertise and international best practices to a deeply Indian business ethos that places clients at its core.</p>
+          <div className="px-[50px] text-gray-600 text-lg max-w-full space-y-3  mt-5 text-justify mx-auto">
+            <p>B K N & CO LLP is a Chartered Accountancy firm that has flourished through organic growth, anchored by our strong execution ability, accessibility, and client-centric approach. We are dedicated to providing insightful and independent assurance services designed to strengthen our clients' positions in today’s complex and dynamic business environment.</p>
+            <p>Our dedicated team brings deep knowledge and extensive experience to meet your diverse requirements. We pride ourselves on an efficient, effective work approach, ensuring that your business objectives are met promptly and with precision. With deep expertise across service lines, our team delivers clear, timely and actionable advice, ensuring quality in every client interaction.</p>
+            <p>At B K N & CO LLP, our collective mission is to provide valuable and tailored support in specialized areas of expertise that ultimately benefit your organization. We pride ourselves on adapting global expertise and international best practices to a deeply Indian business ethos that places clients at its core.</p>
           </div>
         </div>
       </section>
@@ -71,7 +71,7 @@ function AboutPage() {
                 Our Approach
               </h2>
               <div className="text-gray-600 text-lg space-y-5">
-                <p>At B K N & CO LLP, we focus on understanding client's business, goals and challenges. Our services are built on a foundation of quality and commitment to client success. A multi-disciplinary team of experts, aligned with client's needs comes together to provide tailored advice on business models, mergers, acquisitions and tax strategies, both in India and globally. Our aim is to provide innovative, value driven solutions that address the unique challenges of each client.</p>
+                <p>At B K N & CO LLP, we understand that every client is unique, and we remain flexible to your resources and specific needs. We look forward to demonstrating the distinctive difference B K N & CO LLP offers through this engagement and beyond.</p>
               </div>
             </div>
             {/* Right Column (Image) */}
@@ -103,11 +103,13 @@ function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <ValueCard 
               title="People value" 
-              text="With over 1500 professionals from across geographies and diverse backgrounds, B K N & Co. blends Indian values with a progressive global work culture, fostering equal opportunity and inclusivity." 
+              text="At B K N & CO LLP, our strength stems from our people. We are committed to nurturing talent and building a supportive environment where every individual has the opportunity to thrive and contribute meaningfully towards our shared success.
+Our culture encourages growth, collaboration, and professional excellence—ensuring that our clients receive guidance from a team driven by integrity and diverse perspectives.
+" 
             />
             <ValueCard 
               title="Client value" 
-              text="Our motto of Keeping Clients First comes with an unwavering commitment to delivering high-quality services while upholding Integrity and ensuring Transparency in both words and deeds alike." 
+              text="Our motto of Keeping Clients First comes with an unwavering commitment to delivering high-quality services while upholding Integrity and ensuring Transparency in both words and deeds a like." 
             />
             <ValueCard 
               title="Societal value" 
@@ -126,7 +128,7 @@ function AboutPage() {
         className="py-24 md:py-32 bg-cover bg-center min-h-full"
         loading="lazy"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(${hero})`
+          backgroundImage: `linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url(${'/assets/About2.webp'})`
         }}
       >
         <div className="container mx-auto px-6">

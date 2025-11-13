@@ -14,9 +14,9 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-1.5">
               <li><Link to="/about" className="hover:text-white transition">About Us</Link></li>
-              <li><Link to="/" className="hover:text-white transition">Our Team</Link></li>
-              <li><Link to="/" className="hover:text-white transition">Careers</Link></li>
-              <li><Link to="/" className="hover:text-white transition">Contact Us</Link></li>
+              <li><Link to="/about" className="hover:text-white transition">Our Team</Link></li>
+              {/* <li><Link to="/" className="hover:text-white transition">Careers</Link></li> */}
+              <li><Link to="/contactus" className="hover:text-white transition">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -35,9 +35,10 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white mb-4">Get in Touch</h4>
             <ul className="space-y-1.5 text-sm">
               <li>603, Om Shankheshwar Tower, Padmavati Nagar, Near Maxus Mall, Bhayandar West 401101</li>
-              <li>info@bknco.com</li>
+              <li>bknco2810@gmail.com</li>
               <li>+91 977 367 5665</li>
               <li>+91 701 405 3583</li>
+              <li>+91 865 510 5483</li>
             </ul>
           </div>
         </div>

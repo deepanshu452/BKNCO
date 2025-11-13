@@ -25,10 +25,29 @@ export default function Header() {
 
   return (
     <header className="bg-brand-blue text-white shadow-md sticky top-0 z-50">
-      <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-bold header-link">
-          B K N & CO LLP
+      <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
+        {/* <Link to="/" className="text-2xl font-bold header-link">
+          B K N & CO LLP<br/>
+          <span className="text-sm">Chartered Accountant</span>
+        </Link> */}
+        <Link
+          to="/"
+          className="flex items-center gap-3 header-link"
+        >
+          <img
+            src="/logo.png"     /* use your actual logo path */
+            alt="B K N & CO LLP Logo"
+            className="h-12 w-auto"
+          />
+
+          <div className="leading-tight">
+            <span className="text-2xl font-bold block">
+              B K N & CO LLP
+            </span>
+            <span className="text-sm">
+              Chartered Accountants
+            </span>
+          </div>
         </Link>
 
         {/* Logo */}

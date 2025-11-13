@@ -37,12 +37,9 @@ function Services() {
 
   const services = [
     { title:"Taxation", slug:"taxation"},
-    {title:"Regulatory Advisory", slug:"regulatory"},
     {title:"Risk Advisory", slug:"risk-advisory"},
-    {title:"CFO Services", slug:"cfo-services"},
     {title:"Audit & Assurance", slug:"audit"},
     {title:"IPO Services", slug:"ipo-services"},
-    {title:"Valuation", slug:"valuation"}
   ];
 
   return (

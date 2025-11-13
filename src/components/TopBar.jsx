@@ -19,7 +19,9 @@ function TopBar() {
       <div className="container mx-auto px-6 py-2 flex justify-between items-center">
         {/* Left Side: Contact Info */}
         <div className="flex space-x-4">
-          <a href="mailto:info@bknco.com" className="hover:text-brand-blue">info@bknco.com</a>
+          <a href="mailto:info@bknco.com" className="hover:text-brand-blue"> bknco2810@gmail.com</a>
+          <span className="hidden md:block">|</span>
+          <span className="hidden md:block">+91 8655105483</span>
           <span className="hidden md:block">|</span>
           <span className="hidden md:block">Mumbai, India</span>
         </div>

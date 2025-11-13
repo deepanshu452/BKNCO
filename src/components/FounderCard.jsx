@@ -6,12 +6,11 @@ export default function FounderCard(props) {
   return (
     <section 
       aria-labelledby="founder-heading"
-      className="bg-white px-6 py-6 md:py-20 reveal"
+      className="md:gap-12 bg-white px-6 py-6 md:py-20"
     >
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 lg:gap-4 items-center">
-
-          
+                  
           {/* Left column: text */}
           <div>
             <p className="text-sm text-brand-blue font-semibold mb-3 flex items-center gap-3">
@@ -53,7 +52,7 @@ export default function FounderCard(props) {
           </div>
 
           {/* Right column: portrait card */}
-          <div className="relative flex justify-center md:justify-start lg:justify-end lg:-ml-10 mt-10 md:mt-0">
+          <div className="relative flex justify-center md:ml-10 lg:ml-40 mt-10 md:mt-0">
 
             <div className="w-[90%] sm:w-[80%] md:w-[70%] lg:w-full max-w-sm bg-neutral-50 rounded-3xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-1">
 

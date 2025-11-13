@@ -16,18 +16,6 @@ const servicesData = [
     imageAlt: "Taxation Services",
   },
   {
-    title: "Regulatory Advisory", 
-    slug: "regulatory",
-    items: [
-      "Exchange Control Advisory (FEMA & FDI)",
-      "Compounding & Representation Services",
-      "Business Entity Services (set-up, closure, etc.)",
-      "Corporate Compliance & Secretarial Support"
-    ],
-    imageUrl: "/assets/Regulatory.webp",
-    imageAlt: "Regulatory Advisory",
-  },
-  {
     title: "Risk Advisory",
     slug: "risk-advisory",
     items: [
@@ -40,18 +28,7 @@ const servicesData = [
     imageUrl: "/assets/Risk-Advisory-Services.webp",
     imageAlt: "Risk Advisory",
   },
-  {
-    title: "CFO Services", 
-    slug: "cfo-services",
-    items: [
-      "Financial Planning & Analysis",
-      "Cash Flow Management",
-      "Strategic Financial Guidance",
-      "MIS Reporting"
-    ],
-    imageUrl: "assets/CFO.webp",
-    imageAlt: "CFO Services",
-  },
+  
   {
     title: "Audit & Assurance",
     slug: "audit",
@@ -77,18 +54,6 @@ const servicesData = [
     imageUrl: "assets/IPO-Services.webp",
     imageAlt: "IPO Services",
   },
-  {
-    title: "Valuation",
-    slug: "valuation",
-    items: [
-      "Business Valuation",
-      "Financial Reporting Valuation",
-      "Regulatory Valuation (FEMA, Tax)",
-      "Intangible Asset Valuation"
-    ],
-    imageUrl: "assets/Valuation.webp",
-    imageAlt: "Valuation",
-  },
 ];
 
 function ServicesPage() {
@@ -106,7 +71,7 @@ function ServicesPage() {
             Our services custom made
           </h1>
           <p className="text-gray-600 text-lg">
-            Our experience over four decades spans industries and organizations of all forms: from start-ups and SMEs to conglomerates, multinationals, public and private sector firms, multilateral organizations, and governments.
+            We cover a broad range of services under our Audit & Assurance Services vertical to fulfil our clients’ requirements under one roof. This includes: Financial Due diligence, Stock & Fixed Asset audits, Accounting & Audit support,  GAAP conversion & support (including INDAS), Purchase Price Allocation, Certifications, and IND-AS transition support.
           </p>
         </div>
       </section>
