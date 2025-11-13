@@ -2,7 +2,7 @@ import Hero from '../components/Hero';
 import About from '../components/About'; 
 import Services from '../components/Services';
 import FounderCard from '../components/FounderCard';
-import bhaveshceo from '/assets/Bhavesh-CEO.webp';
+import bhaveshceo from '/assets/Bhavesh.webp';
 import AmitJain from '/assets/AmitJain.jpg';
 
 function Home() {
