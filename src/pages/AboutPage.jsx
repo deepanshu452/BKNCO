@@ -15,7 +15,7 @@ const ValueCard = ({ title, text }) => (
     {/* Red divider line from the image */}
     <div className="absolute left-0 top-0 bottom-0 w-1 bg-red-500"></div>
     <h3 className="text-2xl font-semibold text-gray-900 mb-3">{title}</h3>
-    <p className="text-gray-600 leading-relaxed">{text}</p>
+    <p className="text-gray-600 leading-relaxed text-justify">{text}</p>
   </div>
 );
 
@@ -26,7 +26,7 @@ function AboutPage() {
       
       {/*Section 1: "About our Company"*/}
       <section className="bg-gray-50 py-6 md:py-4">
-        <div className="container mx-auto px-2">
+        <div className="container mx-auto">
           <div className="px-[40px] flex items-center text-brand-blue font-semibold mb-3">
             <span className="flex-shrink-0 w-3 h-3 bg-brand-blue rounded-full mr-2"></span>
             ABOUT US
@@ -39,7 +39,7 @@ function AboutPage() {
               <img 
                 src={`${hero}`}
                 alt="Our Approach Handshake" 
-                className="w-full h-[200vh] object-cover"
+                className="w-full h-[88vh] object-cover"
                 loading="lazy"
                 aspect-ratio="3/4"
                 // style={{
@@ -70,7 +70,7 @@ function AboutPage() {
               <h2 className="text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'serif' }}>
                 Our Approach
               </h2>
-              <div className="text-gray-600 text-lg space-y-5">
+              <div className="text-gray-600 text-lg space-y-5 text-justify">
                 <p>At B K N & CO LLP, we understand that every client is unique, and we remain flexible to your resources and specific needs. We look forward to demonstrating the distinctive difference B K N & CO LLP offers through this engagement and beyond.</p>
               </div>
             </div>
@@ -136,7 +136,7 @@ Our culture encourages growth, collaboration, and professional excellence—ensu
             <h2 className="text-5xl font-bold mb-6" style={{ fontFamily: 'serif' }}>
               B K N Foundation
             </h2>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-justify">
               Corporate social responsibility (CSR) has been the cornerstone of success right from the inception of B K N & CO LLP. Our aim is to reach the people and help enrich the quality of life of the community and preserve ecological balance and heritage through a strong environment conscience... As a constructive partner in the communities in which it operates, B K N & CO LLP has been taking concrete action to realize its social responsibility objectives, thereby building value for its customers.
             </p>
           </div>

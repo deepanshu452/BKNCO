@@ -26,7 +26,7 @@ export default function FounderCard(props) {
               From the Founder&apos;s Desk
             </h2>
 
-            <p className="text-base text-gray-600 mb-6 max-w-xl">
+            <p className="text-base text-gray-600 mb-6 max-w-xl text-justify">
               {props.shortBio}
             </p>
 

@@ -44,7 +44,7 @@ function ServiceDetailPage() {
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'serif' }}>
                 {service.title}
               </h1>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed text-justify">
                 {service.mainDescription}
               </p>
             </div>
@@ -76,7 +76,7 @@ function ServiceDetailPage() {
           <div className="space-y-2">
             {service.subServices.map((sub, index) => (
               <AccordionItem key={index} title={sub.title}>
-                <p>{sub.text}</p>
+                <p className="text-justify">{sub.text}</p>
                 {/* can add a "Read More" button here if needed */}
                 {/* <Link to="#" className="text-brand-blue font-semibold mt-4 inline-block">Read More &rarr;</Link> */}
               </AccordionItem>

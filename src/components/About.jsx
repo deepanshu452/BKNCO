@@ -18,7 +18,7 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="text-gray-600 text-base lg:text-lg space-y-5">
+          <div className="text-gray-600 text-base lg:text-lg space-y-5 text-justify">
             <p>B K N &amp; CO LLP is a forward-looking Chartered Accountancy firm established by CA Amit Jain, CA Bhavesh Jain, and CA Krishna Maheshwari. We provide integrated financial, regulatory, and risk advisory solutions to help businesses navigate complexity with clarity.</p>
             <p>We are dedicated to providing insightful and independent assurance services designed to strengthen our clients' positions in today’s complex and dynamic business environment.</p>
 

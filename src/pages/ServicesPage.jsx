@@ -70,7 +70,7 @@ function ServicesPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6" style={{ fontFamily: 'serif' }}>
             Our services custom made
           </h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-lg text-justify">
             We cover a broad range of services under our Audit & Assurance Services vertical to fulfil our clients’ requirements under one roof. This includes: Financial Due diligence, Stock & Fixed Asset audits, Accounting & Audit support,  GAAP conversion & support (including INDAS), Purchase Price Allocation, Certifications, and IND-AS transition support.
           </p>
         </div>
