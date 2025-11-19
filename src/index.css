@@ -5,3 +5,6 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  font-family: "Elms Sans", sans-serif;
+}

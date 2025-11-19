@@ -7,6 +7,7 @@ import ServicesPage from './pages/ServicesPage';
 import ServiceDetailPage from './pages/ServiceDetailPage';
 import ContactPage from './pages/ContactPage';
 import Insights from './pages/Insights';
+import OurTeam from './pages/OurTeam';
 
 // Define routes
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "insights", 
         element: <Insights/>, 
+      },
+      {
+        path: "ourteam", 
+        element: <OurTeam/>, 
       }
     ]
   }

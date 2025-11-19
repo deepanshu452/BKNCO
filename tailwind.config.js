@@ -10,7 +10,11 @@ export default {
         // Here is your custom color palette!
         'brand-blue': '#054c7d', 
         // You can now use classes like `bg-brand-blue` or `text-brand-blue`
-      }
+      },
+      fontFamily: {
+      elms: ['"Elms Sans"', 'sans-serif'],
+      },
+
     },
   },
   plugins: [],

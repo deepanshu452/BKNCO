@@ -62,6 +62,7 @@ export default function Header() {
         {/* Desktop nav */}
         <div className="hidden md:flex space-x-6 items-center">
           <Link to="/about" className="hover:text-gray-300 header-link">About Us</Link>
+          <Link to="/ourteam" className="hover:text-gray-300 header-link">Our Team</Link>
 
           {/* Services dropdown — controlled by state, keyboard-friendly */}
           <div
