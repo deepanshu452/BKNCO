@@ -8,6 +8,8 @@ import ServiceDetailPage from './pages/ServiceDetailPage';
 import ContactPage from './pages/ContactPage';
 import Insights from './pages/Insights';
 import OurTeam from './pages/OurTeam';
+import ServiceSubDetailPage from './pages/ServiceSubDetailPage';
+
 
 // Define routes
 const router = createBrowserRouter([
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "services/:slug", //  This is the DYNAMIC route
         element: <ServiceDetailPage />, 
+      },
+      {
+        path: "services/:slug/:subSlug",
+        element: <ServiceSubDetailPage />,
       },
       {
         path: "contactus", 

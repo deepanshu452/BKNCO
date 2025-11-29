@@ -14,7 +14,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
             <ul className="space-y-1.5">
               <li><Link to="/about" className="hover:text-white transition">About Us</Link></li>
-              <li><Link to="/ourteam" className="hover:text-white transition">Our Team</Link></li>
+              {/* <li><Link to="/ourteam" className="hover:text-white transition">Our Team</Link></li> */}
               {/* <li><Link to="/" className="hover:text-white transition">Careers</Link></li> */}
               <li><Link to="/contactus" className="hover:text-white transition">Contact Us</Link></li>
             </ul>
@@ -23,11 +23,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
             <ul className="space-y-1.5">
-              <li><Link to="/services/taxation" className="hover:text-white transition">Taxation</Link></li>
-              <li><Link to="/services/regulatory" className="hover:text-white transition">Regulatory Advisory</Link></li>
-              <li><Link to="/services/risk-advisory" className="hover:text-white transition">Risk Advisory</Link></li>
-              <li><Link to="/services/cfo-services" className="hover:text-white transition">CFO Services</Link></li>
               <li><Link to="/services/audit" className="hover:text-white transition">Audit &amp; Assurance</Link></li>
+              <li><Link to="/services/taxation" className="hover:text-white transition">Taxation</Link></li>
+              <li><Link to="/services/ipo-services" className="hover:text-white transition">IPO Services</Link></li>
+              <li><Link to="/services/risk-advisory" className="hover:text-white transition">Risk Advisory</Link></li>
             </ul>
           </div>
 

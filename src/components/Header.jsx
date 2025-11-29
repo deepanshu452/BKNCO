@@ -26,16 +26,13 @@ export default function Header() {
   return (
     <header className="bg-brand-blue text-white shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* <Link to="/" className="text-2xl font-bold header-link">
-          B K N & CO LLP<br/>
-          <span className="text-sm">Chartered Accountant</span>
-        </Link> */}
+        
         <Link
           to="/"
           className="flex items-center gap-3 header-link"
         >
           <img
-            src="/logo.png"     /* use your actual logo path */
+            src="/logo800x600.png"    
             alt="B K N & CO LLP Logo"
             className="h-12 w-auto"
           />
@@ -50,19 +47,10 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* Logo */}
-        {/* <Link to="/" className="header-link" aria-label="B K N & CO LLP Homepage">
-          <img 
-            src="/logo2.svg" 
-            alt="B K N & CO LLP " 
-            className="h-10 w-auto" 
-          />
-        </Link> */}
-
         {/* Desktop nav */}
         <div className="hidden md:flex space-x-6 items-center">
           <Link to="/about" className="hover:text-gray-300 header-link">About Us</Link>
-          <Link to="/ourteam" className="hover:text-gray-300 header-link">Our Team</Link>
+          {/* <Link to="/ourteam" className="hover:text-gray-300 header-link">Our Team</Link> */}
 
           {/* Services dropdown — controlled by state, keyboard-friendly */}
           <div

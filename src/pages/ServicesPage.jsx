@@ -4,6 +4,19 @@ import ServiceDetailRow from '../components/ServiceDetailRow';
 
 // --- Service Data ---
 const servicesData = [
+  {
+    title: "Audit & Assurance",
+    slug: "audit",
+    items: [
+      "Statutory Audit",
+      "Tax audit",
+      "Risk Assurance Services / Internal Audit",
+      "Group Reporting",
+      "Other Assurance Services"
+    ],
+    imageUrl: "/assets/Audit-Assurance-1.webp",
+    imageAlt: "Audit & Assurance",
+  },
    {
     title: "Taxation",
     slug: "taxation",
@@ -14,6 +27,18 @@ const servicesData = [
     ],
     imageUrl: "/assets/Taxation.webp",
     imageAlt: "Taxation Services",
+  },
+  {
+    title: "IPO Services", 
+    slug: "ipo-services",
+    items: [
+      "IPO Readiness Assessment",
+      "Restated Financial Statements",
+      "Due Diligence Support",
+      "Post-IPO Compliance"
+    ],
+    imageUrl: "assets/IPO-Services.webp",
+    imageAlt: "IPO Services",
   },
   {
     title: "Risk Advisory",
@@ -29,31 +54,6 @@ const servicesData = [
     imageAlt: "Risk Advisory",
   },
   
-  {
-    title: "Audit & Assurance",
-    slug: "audit",
-    items: [
-      "Statutory Audit",
-      "Tax audit",
-      "Risk Assurance Services / Internal Audit",
-      "Group Reporting",
-      "Other Assurance Services"
-    ],
-    imageUrl: "/assets/Audit-Assurance-1.webp",
-    imageAlt: "Audit & Assurance",
-  },
-  {
-    title: "IPO Services", 
-    slug: "ipo-services",
-    items: [
-      "IPO Readiness Assessment",
-      "Restated Financial Statements",
-      "Due Diligence Support",
-      "Post-IPO Compliance"
-    ],
-    imageUrl: "assets/IPO-Services.webp",
-    imageAlt: "IPO Services",
-  },
 ];
 
 function ServicesPage() {

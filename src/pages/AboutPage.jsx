@@ -119,11 +119,7 @@ Our culture encourages growth, collaboration, and professional excellence—ensu
         </div>
       </section>
 
-      {/* Section 5: "BKN Foundation" (CSR)*/}
-      {/* <section 
-        className="py-24 md:py-32 bg-gray-800 bg-cover bg-center bg-blend-overlay bg-opacity-60" 
-        style={{ backgroundImage: "/assets/CEO-AboutPage.png" }} 
-      > */}
+{/*   
       <section
         className="py-24 md:py-32 bg-cover bg-center min-h-full"
         loading="lazy"
@@ -141,7 +137,7 @@ Our culture encourages growth, collaboration, and professional excellence—ensu
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );

@@ -3,8 +3,7 @@
 import { useEffect } from 'react';
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom';
 
-// Import our new data and components
-import { servicesData } from '../data/services'; // Make sure this path is correct
+import { servicesData } from '../data/services'; 
 import AccordionItem from '../components/AccordionItem';
 
 // A helper hook to scroll to top on page change
@@ -78,7 +77,13 @@ function ServiceDetailPage() {
               <AccordionItem key={index} title={sub.title}>
                 <p className="text-justify">{sub.text}</p>
                 {/* can add a "Read More" button here if needed */}
-                {/* <Link to="#" className="text-brand-blue font-semibold mt-4 inline-block">Read More &rarr;</Link> */}
+                {sub.hasMore && (
+                  <Link to={`/services/${service.slug}/${sub.subSlug}`}
+                        className="text-brand-blue font-semibold mt-4 inline-block">
+                    Read More &rarr;
+                  </Link>
+                ) 
+                }
               </AccordionItem>
             ))}
           </div>

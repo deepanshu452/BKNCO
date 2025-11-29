@@ -36,10 +36,10 @@ const ServiceCard = ({ title, slug }) => {
 function Services() {
 
   const services = [
-    { title:"Taxation", slug:"taxation"},
-    {title:"Risk Advisory", slug:"risk-advisory"},
     {title:"Audit & Assurance", slug:"audit"},
+    { title:"Taxation", slug:"taxation"},
     {title:"IPO Services", slug:"ipo-services"},
+    {title:"Risk Advisory", slug:"risk-advisory"},
   ];
 
   return (
