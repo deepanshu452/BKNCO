@@ -158,8 +158,7 @@ export default function Header() {
             </div>
           </details>
 
-          <Link to="/" onClick={closeMobile} className="block header-link">Industries</Link>
-          <Link to="/" onClick={closeMobile} className="block header-link">Insights</Link>
+          <Link to="/insights" onClick={closeMobile} className="block header-link">Insights</Link>
           <Link to="/contactus" onClick={closeMobile} className="block header-link">Contact Us</Link>
 
           <div className="pt-2">

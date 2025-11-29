@@ -39,7 +39,7 @@ export default function ServiceSubDetailPage() {
             </div>
 
             {/* Right Column (Image) */}
-            <div className="flex justify-center">
+            <div className=" hidden md:flex justify-center">
               <img 
                 src={service.imageUrl} 
                 alt={service.imageAlt} 
