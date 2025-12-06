@@ -13,8 +13,8 @@ export default function About() {
               <span className="w-3 h-3 bg-brand-blue rounded-full mr-2" />
               ABOUT US
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-              A forward-looking firm for integrated financial, regulatory,risk advisory and many more.
+            <h2 className="text-3xl md:text-3xl font-bold text-gray-900 leading-tight">
+              Delivering excellence across Audit & Assurance, Taxation, Regulatory, Risk Advisory, and CFO Services — empowering businesses of every scale to achieve financial integrity and sustainable growth
             </h2>
           </div>
 

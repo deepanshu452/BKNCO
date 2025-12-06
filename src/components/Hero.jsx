@@ -27,7 +27,7 @@ export default function Hero() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const intervalRef = useRef(null);
-  const SLIDE_MS = 2000;
+  const SLIDE_MS = 4000;
 
 // debug for console
   useEffect(() => {

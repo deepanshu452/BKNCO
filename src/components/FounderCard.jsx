@@ -41,13 +41,13 @@ export default function FounderCard(props) {
               </div>
 
               {/* small CTA — optional */}
-              <a
+              {/* <a
                 href="/about"
                 className="ml-4 inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-4 py-2 rounded-full shadow-sm hover:translate-y-[-2px] transition-transform duration-200"
                 aria-label="Read more about the founder"
               >
                 Read More
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -67,10 +67,10 @@ export default function FounderCard(props) {
                 />
               </div>
 
-              <div className="px-6 py-5 bg-white">
+              {/* <div className="px-6 py-5 bg-white">
                 <p className="text-lg font-semibold text-gray-900">{props.name}</p>
                 <p className="text-sm text-gray-500">{props.title}</p>
-              </div>
+              </div> */}
             </div>
           </div>
 

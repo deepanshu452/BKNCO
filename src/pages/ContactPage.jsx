@@ -135,23 +135,97 @@ function ContactPage() {
               <h2 className="text-4xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'serif' }}>
                 Find Us
               </h2>
+
               <div className="space-y-4 text-gray-700 text-lg">
+
+                {/* Address */}
                 <p>
                   <strong>Address:</strong><br />
-                  603, Om Shankheshwar Tower, Padmavati Nagar, Near Maxus Mall, Bhayandar West 401101
+                  <span className="flex items-center gap-2 mt-1">
+                    {/* Address Icon */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21c4.97-4.35 8-8.13 8-11.5A8 8 0 1 0 4 9.5c0 3.37 3.03 7.15 8 11.5z" />
+                      <circle cx="12" cy="9.5" r="2.5" />
+                    </svg>
+                    <span className="leading-tight">
+                      603, Om Shankheshwar Tower, Padmavati Nagar, Near Maxus Mall,<br />
+                      Bhayandar West 401101
+                    </span>
+                  </span>
                 </p>
+
+                {/* Email */}
                 <p>
                   <strong>Email:</strong><br />
-                  <a href="mailto:info@bknco.com" className="text-brand-blue hover:underline"> bknco2810@gmail.com</a>
+                  <span className="flex items-center gap-2 mt-1">
+                    {/* Email Icon */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 6l8 5 8-5m-16 0h16v12H4z" />
+                    </svg>
+
+                    <a href="mailto:info@bknco.com" className="text-brand-blue hover:underline">
+                      bknco2810@gmail.com
+                    </a>
+                  </span>
                 </p>
+
+                {/* Phone */}
                 <p>
                   <strong>Phone:</strong><br />
-                  +91 977 367 5665<br/>
-                  +91 701 405 3583<br/>
-                  +91 865 510 5483
+
+                  {/* Number 1 */}
+                  <span className="flex items-center gap-2 mt-1 leading-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M3 5c.2 7.06 8 15 15 15 1.1 0 2-.9 2-2v-3a1 1 0 0 0-1-1h-3l-2 2c-2.5-1-4.5-3-5.5-5.5l2-2V5a1 1 0 0 0-1-1H5C3.9 4 3 4.9 3 6z"
+                      />
+                    </svg>
+                    +91 977 367 5665
+                  </span>
+
+                  {/* Number 2 */}
+                  <span className="flex items-center gap-2 mt-1 leading-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M3 5c.2 7.06 8 15 15 15 1.1 0 2-.9 2-2v-3a1 1 0 0 0-1-1h-3l-2 2c-2.5-1-4.5-3-5.5-5.5l2-2V5a1 1 0 0 0-1-1H5C3.9 4 3 4.9 3 6z"
+                      />
+                    </svg>
+                    +91 701 405 3583
+                  </span>
+
+                  {/* Number 3 */}
+                  <span className="flex items-center gap-2 mt-1 leading-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M3 5c.2 7.06 8 15 15 15 1.1 0 2-.9 2-2v-3a1 1 0 0 0-1-1h-3l-2 2c-2.5-1-4.5-3-5.5-5.5l2-2V5a1 1 0 0 0-1-1H5C3.9 4 3 4.9 3 6z"
+                      />
+                    </svg>
+                    +91 865 510 5483
+                  </span>
                 </p>
+
               </div>
             </div>
+
 
           </div>
         </div>
