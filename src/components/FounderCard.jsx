@@ -13,18 +13,18 @@ export default function FounderCard(props) {
                   
           {/* Left column: text */}
           <div>
-            <p className="text-sm text-brand-blue font-semibold mb-3 flex items-center gap-3">
+            <p className="text-2xl text-brand-blue font-semibold mb-3 flex items-center gap-3">
               <span className="inline-block w-2 h-2 bg-brand-blue rounded-full" />
               FROM THE FOUNDER&apos;S DESK
             </p>
 
-            <h2
+            {/* <h2
               id="founder-heading"
               className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight mb-6"
               style={{ fontFamily: 'serif' }}
             >
               From the Founder&apos;s Desk
-            </h2>
+            </h2> */}
 
             <p className="text-base text-gray-600 mb-6 max-w-xl text-justify">
               {props.shortBio}
