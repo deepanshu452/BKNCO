@@ -20,7 +20,7 @@ function RootLayout() {
     <div className="min-h-screen flex flex-col font-sans antialiased">
       <ScrollToTop />
 
-      <TopBar />
+      {/* <TopBar /> */}
       <Header />
 
       {/* main content area */}

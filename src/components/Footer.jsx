@@ -78,7 +78,7 @@ export default function Footer() {
                     />
                   </svg>
                 </span>                
-                bknco2810@gmail.com</li>
+                info@bknco.in</li>
                {phoneNumbers.map((num) => (
                   <li key={num} className="flex items-center gap-2">
                      <span>

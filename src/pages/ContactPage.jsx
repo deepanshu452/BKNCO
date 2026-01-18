@@ -179,8 +179,8 @@ function ContactPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4 6l8 5 8-5m-16 0h16v12H4z" />
                     </svg>
 
-                    <a href="mailto:info@bknco.com" className="text-brand-blue hover:underline">
-                      bknco2810@gmail.com
+                    <a href="mailto:info@bknco.in" className="text-brand-blue hover:underline">
+                      info@bknco.in
                     </a>
                   </span>
                 </p>
