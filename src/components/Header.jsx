@@ -32,7 +32,7 @@ export default function Header() {
           className="flex items-center gap-3 header-link"
         >
           <img
-            src="/logo800x600.png"    
+            src="/Logo21.png"    
             alt="B K N & CO LLP Logo"
             className="h-12 w-auto"
           />
