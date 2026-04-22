@@ -3,6 +3,7 @@ import { Outlet, useLocation} from 'react-router-dom';
 import TopBar from '../components/TopBar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Chatbot from '../components/Chatbot';
 
 // Lazy-load MotionWrapper so framer-motion is only fetched when needed
 const MotionWrapper = React.lazy(() => import('../utils/MotionWrapper'));
@@ -33,6 +34,7 @@ function RootLayout() {
         </Suspense>
       </main>
 
+      <Chatbot />
       <Footer />
     </div>
   );
