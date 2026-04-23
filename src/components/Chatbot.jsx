@@ -46,7 +46,6 @@ const Chatbot = () => {
     setMessages(prev => [...prev, { role: 'bot', content: '' }]);
 
     try {
-      // const response = await fetch('http://127.0.0.1:7860/chat/stream', {
       const response = await fetch('https://deepanshu452-bknco-ai-assistant-api.hf.space/chat', {
         method: 'POST',
         headers: {
@@ -139,10 +138,10 @@ const Chatbot = () => {
   };
 
   return (
-    <div className="fixed bottom-[30px] right-[30px] z-[1000] font-sans antialiased">
+    <div className="fixed bottom-[20px] right-[20px] sm:bottom-[30px] sm:right-[30px] z-[1000] font-sans antialiased">
       {/* Floating Action Button */}
       <motion.button
-        className="w-[60px] h-[60px] rounded-full bg-[#1a1a1a] text-white border-none cursor-pointer shadow-2xl flex items-center justify-center transition-transform"
+        className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] rounded-full bg-[#1a1a1a] text-white border-none cursor-pointer shadow-2xl flex items-center justify-center transition-transform"
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -155,7 +154,7 @@ const Chatbot = () => {
               initial={{ rotate: -90, opacity: 0 }}
               animate={{ rotate: 0, opacity: 1 }}
               exit={{ rotate: 90, opacity: 0 }}
-              className="w-[28px] h-[28px]"
+              className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px]"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
             >
               <path d="M18 6L6 18M6 6l12 12" />
@@ -166,7 +165,7 @@ const Chatbot = () => {
               initial={{ rotate: 90, opacity: 0 }}
               animate={{ rotate: 0, opacity: 1 }}
               exit={{ rotate: -90, opacity: 0 }}
-              className="w-[28px] h-[28px]"
+              className="w-[24px] h-[24px] sm:w-[28px] sm:h-[28px]"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
             >
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -179,15 +178,15 @@ const Chatbot = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="absolute bottom-[80px] right-0 w-[380px] h-[600px] max-h-[80vh] bg-white/95 backdrop-blur-xl border border-white/30 rounded-[16px] shadow-2xl flex flex-col overflow-hidden origin-bottom-right"
+            className="absolute bottom-[75px] right-0 w-[calc(100vw-40px)] sm:w-[380px] h-[500px] sm:h-[600px] max-h-[70vh] sm:max-h-[80vh] bg-white/95 backdrop-blur-xl border border-white/30 rounded-[16px] shadow-2xl flex flex-col overflow-hidden origin-bottom-right"
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
           >
-            <div className="p-5 bg-[#1a1a1a] text-white flex justify-between items-center">
+            <div className="p-4 sm:p-5 bg-[#1a1a1a] text-white flex justify-between items-center">
               <div>
-                <h3 className="m-0 text-[1.1rem] font-semibold tracking-tight">BK&CO AI Assistant</h3>
+                <h3 className="m-0 text-[1rem] sm:text-[1.1rem] font-semibold tracking-tight">BK&CO AI Assistant</h3>
                 {status && <p className="m-0 text-[0.7rem] opacity-70 animate-pulse">{status}</p>}
               </div>
               <button className="bg-transparent border-none text-white cursor-pointer opacity-70 hover:opacity-100 transition-opacity" onClick={() => setIsOpen(false)}>
@@ -197,7 +196,7 @@ const Chatbot = () => {
               </button>
             </div>
 
-            <div className="flex-grow p-5 overflow-y-auto flex flex-col gap-[15px] scroll-smooth custom-scrollbar">
+            <div className="flex-grow p-4 sm:p-5 overflow-y-auto flex flex-col gap-[15px] scroll-smooth custom-scrollbar">
               {messages.map((msg, index) => (
                 <motion.div
                   key={index}
@@ -223,12 +222,12 @@ const Chatbot = () => {
               <div ref={messagesEndRef} />
             </div>
 
-            <form className="p-5 border-t border-black/5 flex gap-[10px] bg-white" onSubmit={handleSubmit}>
+            <form className="p-3 sm:p-5 border-t border-black/5 flex gap-[8px] sm:gap-[10px] bg-white" onSubmit={handleSubmit}>
               <input
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                className="flex-grow border border-[#e0e0e0] rounded-[24px] px-5 py-3 text-[0.95rem] outline-none focus:border-[#007aff] transition-colors"
+                className="flex-grow border border-[#e0e0e0] rounded-[24px] px-4 sm:px-5 py-2 sm:py-3 text-[0.9rem] sm:text-[0.95rem] outline-none focus:border-[#007aff] transition-colors"
                 placeholder="Type your message..."
                 disabled={isLoading}
               />
@@ -249,6 +248,11 @@ const Chatbot = () => {
         .markdown-content {
           font-size: 0.95rem;
           line-height: 1.6;
+        }
+        @media (max-width: 640px) {
+          .markdown-content {
+            font-size: 0.9rem;
+          }
         }
         .markdown-content p {
           margin: 0 0 12px 0;
